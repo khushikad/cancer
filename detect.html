@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="detect.css">
+<body>
+    <center>
+        <br>
+        
+        <h1>Skin Cancer Detector- Image</h1>
+        <br>
+        <h3>Please take a picture of the area of concern for potential skin cancer</h3>
+        <h3>After the photo is take please click the analyze button before proceeding to the next screen</h3>
+    <span id="snapshotresult"></span>
+    <h3>Webcam</h3>
+                <div id="camera"></div>
+                
+   <button id="click" onclick="takephoto()" >Capture</button>
+
+    <button id="analyze" onclick="analyze()" >Analyze</button>
+<br>
+<br>
+    <button id="next" onclick="nextQuestion()" >Click to go to the next screen</button>
+   <h3>Potential stage of skin cancer with just image recognition: </h3> <span id="object"></span> 
+           
+    
+</center>
+    <script src="results.js"></script> 
+</body>
+</html>

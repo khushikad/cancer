@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="detect.css">
+<body>
+<center>
+    <h1>Symptom Questions</h1>
+   
+    <h3>1. Has there been a change in a mole(if had) or the existence of the new unfamiliar one?
+    If so which one(if it is multiple select all that apply) 
+    </h3>
+
+    <select name="symptoms" id="symptoms" multiple>
+        <option>Diameter larger than 6 mm </option>
+        <option>Asymmetry</option>
+        <option>Border irregularity </option>
+        <option>Variable color, including a colored halo around it</option>
+        <option>none/other </option>
+      </select>
+      <br>
+      <br>
+      <button id="submit1" onclick="submit1()" >Submit</button>
+
+      <br><br><br>
+
+
+    <h3> 2A. Is there a sore lump or a sore one with bleeding/ pain and redness? 
+        </h3>
+       
+    <input type="text" id="question1" placeholder="Enter yes/no in lowercase ">
+    <br>
+      <br>
+    <button id="submit2" onclick="submit2()" >Submit</button>
+    
+   
+    <h3>2B.If so, how severe on a scale of 10, with 1 being less pain/bleeding and 10 being extreme pain/bleeding?- If no pain select NONE</h3>
+    
+<select name="follow" id="follow" multiple>
+    <option>1---- not much ----       </option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10----- extreme -----      </option>
+    <option>NONE </option>
+  </select>
+  <br>
+      <br>
+      <button id="submit3" onclick="submit3()" >Submit</button>
+
+  <h3>3. Have you noticed any changes in your skin like an area/patch of skin that's abnormally colored, usually red, pink, or white? </h3>
+  <input type="text" id="question2" placeholder="Enter yes/no in lowercase ">
+  <br>
+  <br>
+  <button id="submit4" onclick="submit4()" >Submit</button>
+
+  <h3>4. Have you noticed a scar like lesion area of skin that appeared without the cause of an injury? </h3>
+  <input type="text" id="question3" placeholder="Enter yes/no in lowercase ">
+  <br>
+      <br>
+  <button id="submit5" onclick="submit5()" >Submit</button>
+  <h3>5A. Have you noticed an abnormal area of skin that grew in size and how big is it? </h3>
+  <select name="question3" id="question" multiple>
+    <option> less than 2 cm </option>
+    <option> 2cm </option>
+    <option>more than 2 cm</option>
+    <option>NO</option>
+  </select>
+  <br>
+      <br>
+  <button id="submit6" onclick="submit6()" >Submit</button>
+
+  <h3>5B.If so, does this area resemble a skin lesion that’s partly translucent and shiny? Can you see visible blood vessels in this area?
+ </h3>
+  <input type="text" id="question5" placeholder="Enter yes/no in lowercase ">
+  <br>
+      <br>
+  <button id="submit7" onclick="submit7()" >Submit</button>
+
+  <h3>6.Have you noticed a patch of skin that consistently crusts and oozes but doesn’t heal?
+</h3>
+ <input type="text" id="question6" placeholder="Enter yes/no in lowercase ">
+
+ <br>
+      <br>
+ <button id="submit8" onclick="submit8()" >Submit</button>
+
+<h3>7.Have you noticed any growth to this area of skin? (But still less than 2cm)?
+</h3>
+ <input type="text" id="question7" placeholder="Enter yes/no in lowercase ">
+ <br>
+      <br>
+ <button id="submit9" onclick="submit9()" >Submit</button>
+ <h3>8.Have you experienced any of the following: fatigue, weight loss, loss of appetite, trouble breathing, cough, bone pain, headaches, seizures, swelling of the liver?
+</h3>
+ <input type="text" id="question8" placeholder="Enter yes/no in lowercase ">
+ <br>
+      <br>
+      <button id="submit10" onclick="submit10()" >Submit</button>
+
+      <h3>9.Have you experienced yellowing of eyes and skin (jaundice), and build up of fluid in your tummy (abdomen)?
+    </h3>
+     <input type="text" id="question9" placeholder="Enter yes/no in lowercase ">
+     <br>
+          <br>
+          <button id="submit11" onclick="submit11()" >Submit</button>
+
+          <br>
+          <br>
+
+          <button id="next" onclick="next()" >Click to go to the next screen</button>
+          <br>
+          <br>
+</center>
+
+
+
+
+    <script src="results.js"></script> 
+</body>
+</html>
+
